@@ -9,7 +9,7 @@ function updateRate()
 // function to calculate simple interest
 function compute(){
     var principal = document.getElementById("principal").value;
-   if(parseInt(principal) <= 0){
+   if(parseInt(principal) <= 0 || principal.length <= 0){
         alert("Enter a positive number");
         document.getElementById("principal").focus();
     
